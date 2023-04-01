@@ -72,15 +72,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         }));
     }
-
     @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser user = mAuth.getCurrentUser();
-        if(user==null){
-            startActivity(new Intent(HomeActivity.this,LoginpageActivity.class));
-        }
-    }@Override
     public void onBackPressed() {
         if(drawer.isDrawerOpen(GravityCompat.START)){
             drawer.closeDrawer(GravityCompat.START);
@@ -88,6 +80,14 @@ public class HomeActivity extends AppCompatActivity {
             super.onBackPressed();
         }
 
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+        if(user==null){
+            startActivity(new Intent(HomeActivity.this,LoginpageActivity.class));
+        }
     }
 
 

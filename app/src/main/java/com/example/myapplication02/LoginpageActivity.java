@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,8 +23,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginpageActivity extends AppCompatActivity {
     Button buttonView;
-    TextInputEditText emailLog;
-    TextInputEditText passLog;
+    EditText emailLog;
+    EditText passLog;
     TextView signup;
     FirebaseAuth mAuth;
 
@@ -45,7 +46,7 @@ public class LoginpageActivity extends AppCompatActivity {
                 startActivity(new Intent(LoginpageActivity.this, HomeActivity.class));
             }
         });
-        passLog.setOnClickListener(view -> {
+        buttonView.setOnClickListener(view -> {
             loginUser();
         });
         signup.setOnClickListener(view -> {
@@ -70,8 +71,8 @@ public class LoginpageActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
-                        Toast.makeText(LoginpageActivity.this, "Logging Successful", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(LoginpageActivity.this,LoginpageActivity.class));
+                        Toast.makeText(LoginpageActivity.this, "Logging Successfull", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginpageActivity.this,HomeActivity.class));
                     }
                     else{
                         Toast.makeText(LoginpageActivity.this, "Login Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
