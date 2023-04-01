@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "145673006491",
+    "project_id": "winkelen-db6ce",
+    "storage_bucket": "winkelen-db6ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145673006491:android:be5f897d1150a1e35cc53e",
+        "android_client_info": {
+          "package_name": "com.example.winkelen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145673006491-h9pul06j9dlld281qp2o428fqditb0du.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.winkelen",
+            "certificate_hash": "8d01a215746cb7c362543e17472a2147d1c41bb1"
+          }
+        },
+        {
+          "client_id": "145673006491-ukkarlmh41n7vj7rhtq9ublrt37ebljo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJXAo7PYqHtcZOYlAchITdcNuGd7rCeis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145673006491-ukkarlmh41n7vj7rhtq9ublrt37ebljo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -16,6 +16,8 @@ import android.widget.ImageView;
 
 import com.example.winkelen.R;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -23,12 +25,14 @@ public class HomeActivity extends AppCompatActivity {
     ImageView three;
     private DrawerLayout drawer;
     private NavigationView checkout;
+    FirebaseAuth mAuth;
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        mAuth= FirebaseAuth.getInstance();
 
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
@@ -44,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, SearchpageActivity.class));
             }
         });
+
 
         checkout = (NavigationView) findViewById(R.id.nav_view);
         checkout.setNavigationItemSelectedListener((new NavigationView.OnNavigationItemSelectedListener() {
@@ -66,17 +71,24 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         }));
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+        if(user==null){
+            startActivity(new Intent(HomeActivity.this,LoginpageActivity.class));
+        }
+    }@Override
+    public void onBackPressed() {
+        if(drawer.isDrawerOpen(GravityCompat.START)){
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
 
-      }
-//    }@Override
-//    public void onBackPressed() {
-//        if(drawer.isDrawerOpen(GravityCompat.START)){
-//            drawer.closeDrawer(GravityCompat.START);
-//        } else {
-//            super.onBackPressed();
-//        }
-//
-//    }
+    }
+
 
 }

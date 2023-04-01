@@ -6,16 +6,5 @@
     android:layout_height="match_parent"
     tools:context="com.example.myapplication02.AboutPageActivity">
     
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:cardCornerRadius="90dp"
-        android:background="transparent"
-        tools:ignore="MissingConstraints">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/STUDENT_P">
-        </ImageView>
-    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

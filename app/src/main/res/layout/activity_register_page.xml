@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:id="@+id/emailLog"
+                android:id="@+id/emailReg"
                 android:drawableStart="@drawable/baseline_email_24"
                 android:hint="Enter your Name"
                 android:inputType="text"></EditText>
@@ -43,30 +43,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:id="@+id/passLog"
+                android:id="@+id/passReg"
                 android:drawableStart="@drawable/baseline_lock_24"
                 android:hint="Enter your Password"
                 android:inputType="textPassword"></EditText>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="Forget Password?"
-                android:paddingRight="18dp"
-                android:textColor="#000"
-                android:paddingBottom="10dp"
-                android:textSize="15dp"></TextView>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="end"-->
+<!--                android:text="Forget Password?"-->
+<!--                android:paddingRight="18dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:textSize="15dp"></TextView>-->
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonnext"
+                android:id="@+id/buttonReg"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:background="@drawable/edittext"
                 android:backgroundTint="@color/lightblue"
                 android:elevation="10dp"
-                android:text="Login"></androidx.appcompat.widget.AppCompatButton>
+                android:text="Register"></androidx.appcompat.widget.AppCompatButton>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -123,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:gravity="center"
-                android:text="Don't have an account?"
+                android:text="Already have an account?"
                 android:textColor="#000"
                 android:textSize="15dp"></TextView>
             <TextView
@@ -132,12 +132,12 @@
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:paddingBottom="10dp"
-                android:text="Sign up"
+                android:text="Login here"
                 android:textStyle="bold"
-                android:id="@+id/signup"
                 android:textColor="#000"
+                android:id="@+id/loginReg"
                 android:textSize="15dp"></TextView>
 
         </LinearLayout>
-        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
