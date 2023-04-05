@@ -39,6 +39,13 @@ public class SearchpageActivity extends AppCompatActivity {
                 startActivity(new Intent(SearchpageActivity.this, ProductpageActivity.class));
             }
         });
+        imageView=findViewById(R.id.b03);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SearchpageActivity.this,ProductpageActivity.class));
+            }
+        });
 
     }
 }

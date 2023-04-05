@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-
     tools:context="com.example.myapplication02.MainActivity"
     tools:openDrawer="start">
 
@@ -43,11 +42,13 @@
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:background="@color/lightblue"
             android:layout_height="match_parent">
 
             <ScrollView
                 android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext02"
+                android:elevation="1dp"
                 android:layout_height="match_parent">
 
                 <LinearLayout
@@ -115,7 +116,7 @@
                             android:src="@drawable/img_5"></ImageView>
 
                         <EditText
-                            android:layout_width="291dp"
+                            android:layout_width="260dp"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/white"
                             android:hint="@string/search"
@@ -428,31 +429,31 @@
                         android:layout_marginTop="10dp"
                         android:scrollbars="none">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:orientation="horizontal">
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:orientation="horizontal">-->
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/img_15"></ImageView>
+<!--                            <ImageView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_margin="10dp"-->
+<!--                                android:background="@drawable/img_15"></ImageView>-->
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/img_16"></ImageView>
+<!--                            <ImageView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_margin="10dp"-->
+<!--                                android:background="@drawable/img_16"></ImageView>-->
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:background="@drawable/img_18"></ImageView>
+<!--                            <ImageView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_margin="10dp"-->
+<!--                                android:background="@drawable/img_18"></ImageView>-->
 
-                        </LinearLayout>
+<!--                        </LinearLayout>-->
                     </HorizontalScrollView>
 
                     <LinearLayout
